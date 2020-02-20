@@ -1,0 +1,767 @@
+/*
+btn color: #808000
+Navigation: #e1a564
+background: #fffff0
+hover: #d79c5e
+
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat;
+    font-size: 16px;
+}
+body{
+    background-color: #fffff0!important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+/*----------------------Header---------------*/
+#header{
+    margin: 0;
+    padding: 1em;
+}
+
+#header .col-md-4 img{
+    height: 9vw;
+    width: 9vw;
+
+}
+#header h3{
+    margin: 1.5em auto auto auto;
+    font-size: 2.1vw;
+    text-align: center;
+    display: block;
+    font-weight: 500;
+    
+}
+
+/*-------------------examination header--------------*/
+#examination-header{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0, 0.4)), url(../img/examination_logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    overflow-x: hidden;
+}
+
+#examination-header h3{
+    font-size: 2.9vw;
+    color: white;
+    margin: 1.2em;
+    font-weight: 550;
+    padding: 1.5em auto auto 1.5em;
+}
+/*--------------navbar------------------ */
+#navbarNav ul li{
+    margin: auto 2em;
+}
+.navbar{
+    background-color: #FF8033!important;
+
+}
+#navbarNav ul{
+      padding: 0;
+      margin: auto;
+      list-style: none;
+} 
+#navbarNav ul li a{
+    padding: 0.3em;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.3vw;
+    color: #000000;
+}
+#navbarNav ul li a:hover{
+    background-color: #ef6c00;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+
+/*----------------Complaint registration----------*/
+#complaint_registration .complaint_options ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#complaint_registration .complaint_options li{
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 0.1em;
+  font-weight: 540;
+  background: #afb42b;
+  margin-top: 10px;
+}
+#complaint_registration .complaint_options li:hover{
+  background-color: #808000;
+  color: white;
+  text-decoration: none;
+  
+}
+#complaint_registration .complaint_options a{
+  text-decoration: none;
+  color: #ffffff;
+} 
+#complaint_registration .complaint_options{
+    padding: 2em;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    border: 2px solid #d79c5e;
+    width: 90%;
+}
+
+#complaint_registration .complaint_options h1{
+    font-weight: 500;
+    margin: 0.5em auto;
+}
+#complaint_registration .complaint_options .custom-button{
+  padding: 0.3em;
+  margin: 0.2em;
+  font-size: 1.6em;
+  font-weight: 550;
+}
+
+
+
+
+
+/*------------------Admin Login------------------*/
+
+#admin-login .login-form{
+  margin-top: 80px;
+  width: 90%;
+  background:white;
+  height:580px;
+  padding:80px 40px;
+  border: 2px solid #d79c5e ;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  margin-bottom: 50px;
+}
+#admin-login .login-form h1{
+  text-align: center;
+  margin-bottom: 60px;
+}
+#admin-login .txtb{
+  border-bottom: 2px solid #adadad;
+  position: relative;
+  margin:30px 0;
+
+}
+#admin-login .txtb input{
+  font-size: 20px!important;
+  color: #333!important;
+  border: none;
+  width: 100%;
+  background: none;
+  height:30px;
+  outline:none;
+}
+#admin-login .txtb span::before{
+  content: attr(data-placeholder);
+  position: absolute;
+  top:50%;
+  left: 5px;
+  color:#adadad;
+  transform: translateY(-50%);
+  z-index: -1;
+  transition: .5s;
+}
+#admin-login .txtb span::after{
+  content:'';
+  position: absolute;
+  width: 0px;
+  height:2px;
+  transition: .5s;
+}
+#admin-login .focus + span::before{
+  top: -5px;
+}
+
+#admin-login .focus + span::after{
+  width: 100%;
+}
+#admin-login .lgnbtn{
+  font-size: 140%;
+  display: block;
+  width:60%;
+  height: 45px;
+  border: none;
+  background:  linear-gradient(120deg,#808000,black);
+  color:#fff;
+  outline:none;
+  cursor:pointer;
+  transition: .5s;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/*-------------------User-login-------------------*/
+
+#user-login .login-form{
+  width: 80%;
+  background: white;
+  height:580px;
+  padding:80px  40px;
+  border: 2px solid #d79c5e ;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+#user-login .login-form h1{
+  text-align: center;
+  margin-bottom: 60px;
+}
+#user-login .txtb{
+  border-bottom: 2px solid #adadad;
+  position: relative;
+  margin:30px 0;
+}
+#user-login .txtb input{
+  font-size: 20px;
+  color: #333;
+  border: none;
+  width: 100%;
+  background: none;
+  height:30px;
+  outline:none;
+}
+#user-login .txtb span::before{
+  content: attr(data-placeholder);
+  position: absolute;
+  top:50%;
+  left: 5px;
+  color:#adadad;
+  transform: translateY(-50%);
+  z-index: -1;
+  transition: .5s;
+}
+#user-login .txtb span::after{
+  content:'';
+  position: absolute;
+  width: 0px;
+  height:2px;
+  transition: .5s;
+}
+#user-login .focus + span::before{
+  top: -5px;
+}
+#user-login .focus + span::after{
+  width: 100%;
+}
+#user-login .lgnbtn{
+  display: block;
+  width:60%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40px;
+  border: none;
+  background:  linear-gradient(120deg,#808000,black);
+  color:#fff;
+  outline:none;
+  cursor:pointer;
+  font-size: 20px;
+
+}
+#user-login .sgn{
+  display: block;
+  width:60%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40px;
+  border: none;
+  background:  linear-gradient(120deg,black,#808000);
+  color:#fff;
+  outline:none;
+  cursor:pointer;
+  transition: .5s;
+  font-size: 20px;
+
+}
+#user-login hr{
+
+  height: 0.8px;
+  background: #333;
+}
+
+/*----------------------Sign Up------------------*/
+
+#signup .signup-form{
+    margin: 10px;
+    width: 95%;
+    background:#f1f1f1;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding:60px 40px;
+    border-radius: 20px;
+    border: 2px solid #d79c5e;
+    opacity: 0.7;
+    filter: alpha(opacity=50);
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+#signup .signup-form h1{
+  text-align: left;
+  margin-bottom: 20px;
+}
+#signup .signup .form-row label{
+    margin-top: 20px;
+}
+#signup .login-form select{
+  margin: 10px;
+  padding:2px;
+}
+#signup .signup input[type="submit"]{
+    margin-top: 40px;
+    width:50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 140%;
+    background:linear-gradient(120deg,#808000,black);
+}
+
+
+
+/*------------------------Exam Related Problems------------------*/
+#exam-problem{
+    margin-top: 80px;
+    padding: 30px;
+    background: #ffffff;
+    border: 2px solid #d79c5e;
+    border-radius: 20px;
+    width: 95%;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+#exam-problem h2{
+    text-transform: uppercase;
+    text-align: center;
+    color: #212529;
+    padding: 2px;
+    margin: 20px 10px;
+    font-weight: 550;
+} 
+#exam-problem label{
+    margin-top: 20px;
+    font-weight: 550;
+    display: inline-block;
+    font-size: 20px;
+}
+#exam-problem input[type="submit"], input[type="reset"]{
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  background-color: #afb42b;
+  padding: 0.7em 0.9em;
+  margin: 2em auto;
+  border-radius: 5px;
+  position: relative;
+  border: none;
+  margin: auto 30px;
+  left: 35%;
+}
+#exam-problem input[type="submit"]:hover, input[type="reset"]:hover{
+    background: #9e9d24; 
+}
+
+details summary{
+
+  font-size: 130%;
+  font-family: serif;
+}
+details p{
+  font-size: 130%;
+  font-family: 'Courier New', Courier, monospace;
+  margin-left: 7%;
+  margin-top: 1%;
+  margin-bottom: 2%;  
+}
+.qview{
+  font-size: 80%;
+  cursor: pointer;
+  color: white;
+  background-color: #afb42b;
+  padding: 0.5em 0.7em;
+  margin: 2em auto;
+  border-radius: 20px;
+  border: none;
+  text-decoration: none;
+  right: 5%;
+}
+.qview:hover{
+  background: #9e9d24; 
+  color: white;
+  text-decoration: none;
+}
+
+
+/*----------------Admin Reply---------------------*/
+#admin-reply{
+    background: white;
+    margin-top: 30px;
+    padding: 30px;
+    margin-top: 80px;
+    border: 2px solid #d79c5e;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+#admin-reply label{
+    font-size: 20px;
+    font-weight: 550;
+    margin: 10px auto;
+}
+#admin-reply textarea{
+    margin-top: 20px;
+}
+#admin-reply input[type="submit"]{
+  font-size: 140%;
+  cursor: pointer;
+  color: white;
+  background-color: #afb42b;
+  padding: 0.7em 0.9em;
+  border-radius: 20px;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 20%;
+  margin-top: 5%;
+  text-align: center
+}
+#admin-reply input[type="submit"]:hover{
+    background: #9e9d24; 
+}
+
+.blockbtn{
+
+  font-size: 130%;
+  cursor: pointer;
+  background-color: #afb42b;
+  padding: 0.7em 0.9em;
+  margin: 2em auto;
+  border-radius: 20px;
+  border: none;
+  display: block;
+  width: 30%;
+  text-align: center;        
+}
+.blockbtn:hover{
+  background: #9e9d24; 
+}
+.blockbtn button{
+  background: none;
+  outline: none;
+  border: none;
+  color: white;
+
+}
+
+/*--------------Updates and Resources-----------*/
+
+#updates-table{
+    margin: 40px 20px;
+    padding: 30px;
+    background-color: white;
+    width: 95%;
+    border: 2px solid #d79c5e;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+#updates-table button{
+  cursor: pointer;
+  color: white;
+  background-color: #afb42b;
+  border-radius: 10px;
+  border: none;
+  padding: 0.7rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-size: 120%;
+
+}
+#updates-table button:hover{
+    background: #9e9d24; 
+    
+}
+#updates-table table thead th{
+    font-size: 1.3rem;
+}
+#updates-table label{
+    font-size: 20px;
+    font-weight: 550;
+    margin-bottom: 5px;
+}
+#updates-table textarea + button, table + label + input + button{
+    font-size: 20px;
+    padding: 10px;
+    margin: 30px auto;
+    
+}
+#updates-table input[type="file"]{
+    outline: none;
+    border: none;
+    font-size: 110%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#updates-table strong {
+  font-size: 100%;
+}
+
+#updates-table h2{
+  font-size: 200%;
+  display: block;
+  margin: 5% auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rview{
+  font-size: 100%;
+  cursor: pointer;
+  color: white;
+  background-color: #afb42b;
+  padding: 0.7em 0.9em;
+  margin: 2em auto;
+  border-radius: 20px;
+  border: none;
+  text-decoration: none;
+  margin-top: 5%;
+}
+.rview:hover{
+  background: #9e9d24; 
+  color: white;
+  text-decoration: none;
+}
+
+/* -------------Important Updates------------ */
+.updates{
+    margin-top: 80px;        
+    border-radius: 1em;
+    display: "block";
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 500px;
+    height: auto;
+    padding: 20px;
+    border: 2px solid #d79c5e;
+    margin-bottom: 50px;
+    opacity: 0.8;
+}
+
+.updates ul{
+    padding: 5px 5px 5px 5px;
+    text-align: left;
+    list-style: none;
+}
+.updates h4{
+    text-align: center;  
+    font-weight: 600;
+}
+.updates li{
+  font-size: 110%;
+  margin: 10px auto;
+}
+#imp_n{
+  font-size: 130%;
+  font-weight: 600;
+  color: rgb(0, 153, 102);
+  box-shadow: 1px #ef6c00;
+}
+#up_li{
+  font-size: 120%;
+  font-weight: 550;
+
+}
+.home-left{
+
+  margin-top: 80px;        
+  border-radius: 1em;
+  display: "block";
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 500px;
+  height: auto;
+  padding: 20px;
+  border: 2px solid #d79c5e;
+  margin-bottom: 50px;
+  opacity: 0.8;
+  font-size: 120%;
+
+}
+
+.home-left ul{
+    padding: 0.7rem 2rem;
+  }
+.home-left ul li{
+
+  font-size: 120%;
+  }
+/* --------------student resource-------------*/
+.student_resource{
+  width: auto;
+  background: #FF8033;
+  overflow: auto;
+  margin-top: 80px;
+  }
+  .student_resource ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  }
+  .student_resource li {
+    border: 1px solid #ef6c00;
+  }
+  .student_resource li a{
+  display: block;
+  color: black;
+  font-size: 1.2em;
+  text-align: center;
+  text-decoration: none;
+  padding:1em;
+  font-weight: 540;
+  text-transform: uppercase;
+  }
+  .student_resource li a:hover{
+  background-color: #ef6c00;
+  color: white;
+  text-decoration: none;
+  }
+
+
+  /* ---------Validation------- */
+
+
+
+.error {
+    color: red;
+    font-size: inherit;
+    margin-left: 1.5rem;
+}
+
+
+.notification {
+    font-size: 1.4rem;
+    text-align: center;
+    background-color: #999;
+    border-left: 10px solid #ef6c00;
+    color: #fff;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+}
+/* ------------About----------- */
+
+.about{
+  border: 2px solid #d79c5e;
+  padding: 3%;
+  border-radius: 20px;
+  opacity: 0.8;
+  margin-top: 80px; 
+  margin-bottom: 50px
+}
+
+.about h1{
+  text-align: center;
+  font-family: open-sans;
+  margin-bottom: 140px;
+}
+.about h1::after{
+  content: " ";
+  display: block;
+  height: 3px;
+  background: #ef6c00;;
+  width: 200px;
+  margin: 15px auto;
+}
+
+.about .text-center{
+  padding: 40px auto;
+  margin: 5% auto 25% auto;
+  
+}
+
+.about .user{
+  min-width: 140px;
+  min-height: 140px;
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+}
+
+.about .profile{
+  padding: 70px 10px 10px;
+  background-color: #efefef;
+}
+
+.about .profile img{
+  top: -90px;
+  left: calc(50% - 80px);
+  position: absolute;
+  border: 5px solid #fffff0;
+}
+
+.about .profile h3{
+  color: #ef6c00;
+  font-size: 140%;
+  font-family: open-sans;
+  margin-top: 12%;
+}
+.about .profile h4{
+  font-family: sans;
+  font-size: 100%;
+  margin-bottom: 3%;
+}
+
+.about span{
+  font-size: 70%;
+  color: #333;
+}
+
+.about .profile:hover{
+  box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transform: 0.5s;
+  transition: 0.4s;
+}
